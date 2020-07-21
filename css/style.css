@@ -18,7 +18,6 @@ body{
 header{
   text-align: center;
   line-height: 50%;
-  padding: 1%;
 }
 header h1{
   font-size: 300%;
@@ -26,7 +25,7 @@ header h1{
 
 /* styling for the image div */
 .img-div{
-  padding: 1%;
+  padding-bottom: 2%;
   text-align: center;
 }
 .img-div h4{
@@ -35,13 +34,14 @@ header h1{
 
 }
 .img-div img{
-  width: 100%;
+  border: 5px solid white;
+  width: 55%;
 }
 
 /* Styling for the button */
 .img-div button{
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 10px 20px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -87,4 +87,11 @@ footer a:visited{
 footer a:hover{
   text-decoration: underline;
   color: #969254;
+}
+
+@media (max-width:952px){
+  .img-div img{
+    border: 2px solid white;
+    width: 100%;
+  }
 }
